@@ -1,0 +1,84 @@
+button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(117, 117, 222);
+    color:white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blue;
+}
+
+#h11{
+    font-family: 'Kolker Brush', cursive;
+    font-size: 50px;
+}
+
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    transition: width 2s;
+}
+
+.box:hover{
+    width: 200px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+#c1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(215, 103, 29);
+    border-radius: 50%; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%{
+background-color: aquamarine;
+
+    }
+    25%{
+        background-color: rgb(19, 23, 89);
+        transform:translateX(400px); 
+    }
+    50%{
+        background-color: rgb(179, 225, 28); 
+        transform:translateY(500px); 
+    }
+    75%{
+        background-color: rgb(221, 51, 125); 
+        transform:translateY(400px); 
+    }
+    100%{
+        background-color: rgb(238, 232, 60);
+    }
+    
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid lightblue;
+    background-color: aliceblue;
+}
+/* Write code to show implementation of media queries */
+@media screen and (min-width:300px) and (max-width:600px) {
+    .box{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(56, 223, 23);
+        transition: width 2s;
+    }
+
+    
+}
